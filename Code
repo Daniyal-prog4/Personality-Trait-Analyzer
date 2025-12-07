@@ -1,0 +1,208 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+	int num;
+    char answers[25];
+    string userName;
+    int extraversion = 0, introversion = 0;
+    int sensing = 0, intuition = 0;
+    int thinking = 0, feeling = 0;
+    int judging = 0, perceiving = 0;
+    
+
+    cout << "**************************************" << endl;
+    cout << "*     Personality Trait Analyzer     *" << endl;
+    cout << "*     Developed by Daniyal Saleem    *" << endl;
+    cout << "**************************************" << endl << endl;
+
+    cout << "Enter your name: ";
+    getline(cin, userName);
+    
+    cout << "\nWelcome " << userName << "!\n" << endl;
+    cout <<"Do you want to Start Personality Analyzing Test\n ";
+    cout <<"1. Yes\n";
+    cout <<" 2. No\n";
+    cin>>num;
+    if( num==1)
+	{
+    		  cout << "Please answer the following questions " << endl;
+    cout << "=====================================" << endl << endl;
+
+    cout << "1. Do you feel full of energy after talking with a group of people? (Y/N): ";
+    cin >> answers[0];
+    if(answers[0] == 'Y' || answers[0] == 'y') extraversion++;
+    else introversion++;
+    
+    cout << "2. Do you enjoy being by yourself more than being at parties? (Y/N): ";
+    cin >> answers[1];
+    if(answers[1] == 'Y' || answers[1] == 'y') introversion++;
+    else extraversion++;
+
+    cout << "3. Do you find it easy to start a talk with someone new? (Y/N): ";
+    cin >> answers[2];
+    if(answers[2] == 'Y' || answers[2] == 'y') extraversion++;
+    else introversion++;
+
+    cout << "4. Do you usually think carefully before you say something? (Y/N): ";
+    cin >> answers[3];
+    if(answers[3] == 'Y' || answers[3] == 'y') introversion++;
+    else extraversion++;
+
+    cout << "5. Do you focus more on facts than ideas? (Y/N): ";
+    cin >> answers[4];
+    if(answers[4] == 'Y' || answers[4] == 'y') sensing++;
+    else intuition++;
+
+    cout << "6. Do you often imagine your future? (Y/N): ";
+    cin >> answers[5];
+    if(answers[5] == 'Y' || answers[5] == 'y') intuition++;
+    else sensing++;
+
+    cout << "7. Do you believe what you know already more than new thoughts? (Y/N): ";
+    cin >> answers[6];
+    if(answers[6] == 'Y' || answers[6] == 'y') sensing++;
+    else intuition++;
+
+    cout << "8. Do you look for hidden meanings in stories? (Y/N): ";
+    cin >> answers[7];
+    if(answers[7] == 'Y' || answers[7] == 'y') intuition++;
+    else sensing++;
+
+    cout << "9. Is it better to treat people equally than just be kind to them? (Y/N): ";
+    cin >> answers[8];
+    if(answers[8] == 'Y' || answers[8] == 'y') thinking++;
+    else feeling++;
+ 
+    cout << "10. Do you care a lot about how others feel? (Y/N): ";
+    cin >> answers[9];
+    if(answers[9] == 'Y' || answers[9] == 'y') feeling++;
+    else thinking++;
+
+    cout << "11. Is telling the truth your top priority, even if it hurts? (Y/N): ";
+    cin >> answers[10];
+    if(answers[10] == 'Y' || answers[10] == 'y') thinking++;
+    else feeling++;
+
+    cout << "12. Do you avoid arguments to keep peace? (Y/N): ";
+    cin >> answers[11];
+    if(answers[11] == 'Y' || answers[11] == 'y') feeling++;
+    else thinking++;
+
+    cout << "13. Do you like making a daily plan? (Y/N): ";
+    cin >> answers[12];
+    if(answers[12] == 'Y' || answers[12] == 'y') judging++;
+    else perceiving++;
+
+    cout << "14. Do you note what you need to do? (Y/N): ";
+    cin >> answers[13];
+    if(answers[13] == 'Y' || answers[13] == 'y') judging++;
+    else perceiving++;
+
+    cout << "15. Do you feel stressed when making quick decisions? (Y/N): ";
+    cin >> answers[14];
+    if(answers[14] == 'Y' || answers[14] == 'y') perceiving++;
+    else judging++;
+
+    cout << "16. Are you good at changing plans when needed? (Y/N): ";
+    cin >> answers[15];
+    if(answers[15] == 'Y' || answers[15] == 'y') perceiving++;
+    else judging++;
+
+    cout << "17. Do you get worried easily? (Y/N): ";
+    cin >> answers[16];
+    if(answers[16] == 'Y' || answers[16] == 'y') {
+    }
+
+    cout << "18. Do you often worry about things before they happen? (Y/N): ";
+    cin >> answers[17];
+    if(answers[17] == 'Y' || answers[17] == 'y') {
+    }
+
+    cout << "19. Does criticism easily upset you? (Y/N): ";
+    cin >> answers[18];
+    if(answers[18] == 'Y' || answers[18] == 'y') {
+    }
+
+    cout << "20. Are you a relaxed person most of the time? (Y/N): ";
+    cin >> answers[19];
+    if(answers[19] == 'Y' || answers[19] == 'y') {
+    }
+
+    cout << "21. Are you curious to learn new things? (Y/N): ";
+    cin >> answers[20];
+    if(answers[20] == 'Y' || answers[20] == 'y') {
+    }
+
+    cout << "22. Do you enjoy art, music, or nature? (Y/N): ";
+    cin >> answers[21];
+    if(answers[21] == 'Y' || answers[21] == 'y') {
+    }
+
+    cout << "23. Do you trust people easily? (Y/N): ";
+    cin >> answers[22];
+    if(answers[22] == 'Y' || answers[22] == 'y') {
+    }
+
+    cout << "24. Do you prefer teamwork over individual? (Y/N): ";
+    cin >> answers[23];
+    if(answers[23] == 'Y' || answers[23] == 'y') {
+    }
+
+    cout << "25. Do you try to see things from others' views? (Y/N): ";
+    cin >> answers[24];
+    if(answers[24] == 'Y' || answers[24] == 'y') {}
+
+    cout << "\n\n==========================================" << endl;
+    cout << "          PERSONALITY RESULTS" << endl;
+    cout << "==========================================" << endl;
+    cout << "Name: " << userName << endl << endl;
+
+    cout << "Primary Traits:" << endl;
+    if(extraversion > introversion) {
+        cout << "- Extraversion (E): Social and outgoing" << endl;
+    } else {
+        cout << "- Introversion (I): Reflective and reserved" << endl;
+    }
+
+    if(sensing > intuition) {
+        cout << "- Sensing (S): Practical and detail-oriented" << endl;
+    } else {
+        cout << "- Intuition (N): Imaginative and big-picture thinker" << endl;
+    }
+
+    if(thinking > feeling) {
+        cout << "- Thinking (T): Logical and objective" << endl;
+    } else {
+        cout << "- Feeling (F): Empathetic and values harmony" << endl;
+    }
+
+    if(judging > perceiving) {
+        cout << "- Judging (J): Organized and decisive" << endl;
+    } else {
+        cout << "- Perceiving (P): Flexible and spontaneous" << endl;
+    }
+
+    cout << "\nYour Personality Type: ";
+    if(extraversion > introversion) cout << "E";
+    else cout << "I";
+    
+    if(sensing > intuition) cout << "S";
+    else cout << "N";
+    
+    if(thinking > feeling) cout << "T";
+    else cout << "F";
+    
+    if(judging > perceiving) cout << "J";
+    else cout << "P";
+    
+    cout << endl;
+    
+    cout << "\nThank you for completing the Personality Trait Analyzer!" << endl;
+    cout << "********************************************************" << endl;
+	}
+	else
+	cout<<"Goodbye!\n";
+	return 0;
+}
