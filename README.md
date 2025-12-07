@@ -1,6 +1,6 @@
-Khadim Hussain , Daniyal Saleem Students of Computer Systems Engineering, Sukkur IBA University
+Hi! I'm Daniyal Saleem Students of Computer Systems Engineering, Sukkur IBA University
 
-Both authors are passionate about:
+I'm passionate about:
 
 Hardware development
 
